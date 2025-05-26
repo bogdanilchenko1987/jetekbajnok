@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/assets/images/f-logo.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Készítse el saját weboldalát a JetekBajnok weboldalkészítő segítségével! Könnyű, gyors és reszponzív megoldásokat kínálunk, amelyek minden vállalkozás számára ideálisak. Regisztráljon most, és hozza létre saját online jelenlétét!"
+    />
+
+    <meta
+      name="keywords"
+      content="weboldalkészítő, ingyenes weboldal készítés, weboldal tervezés, reszponzív weboldal, üzleti weboldal készítés, egyszerű weboldalkészítő, weboldal sablonok, magyar weboldal készítő, online weboldal készítés"
+    />
+
+    <title>
+      JetekBajnok - Weboldalkészítő: Könnyű, Gyors és Professzionális Weboldalak
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="relative bg-[#04070c]">
+      <div class="absolute left-6 top-8">
+        <button id="burgerMenu" class="text-3xl text-gray-500">&#9776;</button>
+      </div>
+
+      <div class="text-center py-4">
+        <a href="/">
+          <p
+            class="text-gray-200 text-2xl font-semibold uppercase py-6 hover:text-gray-500"
+          >
+            jetekbajnok
+          </p></a
+        >
+      </div>
+
+      <nav
+        id="sidebar"
+        class="fixed inset-0 bg-gray-800 bg-opacity-75 transform -translate-x-full transition-transform duration-300 ease-in-out z-30 md:w-1/5"
+      >
+        <div class="flex justify-end p-4">
+          <button id="closeMenu" class="text-3xl text-white">&times;</button>
+        </div>
+        <ul
+          class="flex flex-col items-center space-y-6 pt-12 text-white text-xl"
+        >
+          <li><a href="/" class="hover:text-gray-400">Kezdőlap</a></li>
+          <li>
+            <a href="/#services" class="hover:text-gray-400">Szolgáltatások </a>
+          </li>
+          <li>
+            <a href="/#pricing" class="hover:text-gray-400">Árképzés</a>
+          </li>
+
+          <li>
+            <a href="/#contact" class="hover:text-gray-400">Kapcsolatok</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      const burgerMenu = document.getElementById("burgerMenu");
+      const sidebar = document.getElementById("sidebar");
+      const closeMenu = document.getElementById("closeMenu");
+
+      burgerMenu.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+        sidebar.classList.add("translate-x-0");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        sidebar.classList.remove("translate-x-0");
+      });
+    </script>
+
+    <main class="bg-[#04070c] py-16 px-8">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center text-gray-200 mb-8">
+          Adatvédelmi irányelvek
+        </h1>
+        <p class="text-lg text-gray-200 mb-6">
+          A JetekBajnok tiszteletben tartja személyes adatainkat és azokat
+          bizalmasan kezeli. Az alábbi adatvédelmi szabályzat bemutatja, hogyan
+          gyűjtjük, használjuk és védjük a személyes adatokat, valamint hogyan
+          biztosítjuk, hogy adatainkat az alkalmazandó jogszabályokkal
+          összhangban kezeljük.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Miért fontos az adatvédelem?
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Az adatvédelem a felhasználóink számára kiemelten fontos. Az adatok
+          megfelelő védelme és az adatkezelési gyakorlatok átláthatósága segíti,
+          hogy biztonságban érezzük magunkat az interneten.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Gyűjtött adatok
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Az alábbi adatokat gyűjthetjük:
+        </p>
+        <ul class="list-disc pl-6 text-lg text-gray-200 mb-6">
+          <li>Email cím</li>
+          <li>Felhasználói név</li>
+          <li>Böngészési és használati adatok</li>
+          <li>IP cím és egyéb eszközazonosítók</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Hogyan használjuk az Ön adatait?
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Az Ön személyes adatait az alábbi célokra használjuk:
+        </p>
+        <ul class="list-disc pl-6 text-lg text-gray-200 mb-6">
+          <li>Szolgáltatásaink nyújtása és fejlesztése</li>
+          <li>Felhasználói fiók kezelése</li>
+          <li>Kampányok és promóciók biztosítása</li>
+          <li>Biztonsági intézkedések biztosítása</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Adatkezelés biztonsága
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          A személyes adatokat biztonságosan tároljuk és kezeljük. Az adatok
+          védelme érdekében titkosítást alkalmazunk, és a legjobb gyakorlatokat
+          követjük annak biztosítása érdekében, hogy adatai mindig védve
+          legyenek.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Harmadik fél általi hozzáférés
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Az Ön adatait harmadik fél nem jogosult használni, kivéve, ha ez a
+          jogi előírások miatt szükséges, vagy amennyiben a felhasználó
+          kifejezett beleegyezését adja.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Adatok tárolása és megőrzése
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Személyes adatait csak addig tároljuk, amíg az szükséges az
+          adatkezelés céljainak eléréséhez. Az adatokat nem tároljuk tovább, ha
+          már nincs rá szükségünk.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">
+          Adatvédelmi jogai
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Ön jogosult hozzáférni, módosítani vagy törölni személyes adatait.
+          Amennyiben szeretné élni ezekkel a jogokkal, kérjük, lépjen
+          kapcsolatba velünk a megadott elérhetőségek egyikén.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">Frissítések</h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Az adatvédelmi irányelveinket időről időre frissíthetjük. A
+          legfrissebb változásokat a weboldalunkon közzétesszük, és értesítjük
+          Önt az új irányelvekről.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mb-4">Kapcsolat</h2>
+        <p class="text-lg text-gray-200 mb-6">
+          Ha kérdése van adatvédelmi irányelveinkkel kapcsolatban, kérjük, vegye
+          fel velünk a kapcsolatot:
+        </p>
+        <p class="text-lg text-gray-200">
+          Email:
+          <span class="text-blue-600">support@jetekbajnok.com</span>
+        </p>
+      </div>
+    </main>
+
+    <footer class="relative py-16 bg-[#04070c] text-white">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center mb-12"
+        >
+          <a aria-label="go back to home" class="mb-6 lg:mb-0" href="">
+            <img class="w-40 h-40" src="/assets/images/f-logo.svg" alt="logo" />
+          </a>
+
+          <ul class="flex flex-wrap justify-center gap-6 mb-6 lg:mb-0">
+            <li>
+              <a href="/" class="text-lg text-gray-400 hover:text-white"
+                >Kezdőlap</a
+              >
+            </li>
+            <li>
+              <a href="/faq/" class="text-lg text-gray-400 hover:text-white"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="/portfolio/"
+                class="text-lg text-gray-400 hover:text-white"
+                >Portfólió</a
+              >
+            </li>
+            <li>
+              <a href="/tech/" class="text-lg text-gray-400 hover:text-white"
+                >Technológiák</a
+              >
+            </li>
+            <li>
+              <a href="/cookies/" class="text-lg text-gray-400 hover:text-white"
+                >Cookies Szabályzat</a
+              >
+            </li>
+            <li>
+              <a href="/privacy/" class="text-lg text-gray-400 hover:text-white"
+                >Privacy Szabályzat</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <span class="text-sm text-gray-400">
+            © 2025
+            <p class="text-gray-400 hover:text-white">jetekbajnok.com</p>
+            All right reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
